@@ -4,7 +4,7 @@ public class EmailNotifier {
     
     // The Dependency inversion principle: "Depend upon abstractions, [not] concretes."
     // GOOD, we can change for another implementation without changing the code
-
+    // NO DEPENDENCE WITH GMAIL
     private EmailSender emailSender;
 
     public EmailNotifier(EmailSender emailSender) {
