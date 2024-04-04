@@ -1,5 +1,5 @@
 
-package solid.dependecyinjection.bad;
+package solid._05_dependecyinjection.bad;
 
 public class GmailEmailSender {
 

@@ -1,13 +1,11 @@
-package solid.dependecyinjection.good;
-
+package solid._05_dependecyinjection.bad;
 public class EmailNotifier {
     
     // The Dependency inversion principle: "Depend upon abstractions, [not] concretes."
-    // GOOD, we can change for another implementation without changing the code
+    // BAD, we cannot change for another implementation without changing the code
+    private GmailEmailSender emailSender;
 
-    private EmailSender emailSender;
-
-    public EmailNotifier(EmailSender emailSender) {
+    public EmailNotifier(GmailEmailSender emailSender) {
         this.emailSender = emailSender;
     }
 

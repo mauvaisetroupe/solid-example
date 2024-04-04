@@ -1,5 +1,5 @@
 
-package solid.dependecyinjection.good;
+package solid._05_dependecyinjection.good;
 
 public class GmailEmailSender implements EmailSender {
 
