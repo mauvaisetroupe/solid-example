@@ -9,7 +9,7 @@ Ils peuvent facilement le faisant un extend de la classe A, sans apporter de mod
 
 Typiquement, pas de IF avec des process pour des cas différent
 
-### BAD:
+#### BAD:
 ```
 Class Course{
     IF (onLine) {}
@@ -17,7 +17,7 @@ Class Course{
 } 
 ```
 
-### GOOD
+#### GOOD
 ```
 Class Course {}
 Class OnLineCourse extends Course {}
@@ -47,7 +47,7 @@ Une classe devrait au maximum dépendre d'interfaces, et non pas d' implémentat
 
 Les implémentations pourront être changés sans modifier le code qui manipule cette implémentation à travers l'interface
 
-### BAD
+#### BAD
 
 ```
 
@@ -61,7 +61,7 @@ Class ReportGeneraor {
 }
 ```
 
-### GOOD
+#### GOOD
 ```
 Interface Logger {}
 
